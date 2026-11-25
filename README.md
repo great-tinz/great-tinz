@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Open%20to-Internships%20%26%20Collaboration-2ea043?style=for-the-badge" alt="Open to internships and collaboration" />
+  <img src="https://img.shields.io/badge/Open%20to%20Work-Internships%20%26%20Collaboration-2ea043?style=for-the-badge" alt="Open to work — internships and collaboration" />
 </p>
 
 ---
@@ -21,8 +21,7 @@
 - 💻 Software Development & Database Management
 - 🔐 Cybersecurity & Networking
 - ⚙️ Business Process Automation
-- 💼 Job & Career Opportunities
-- 🤝 Tech Sales & Client Solutions
+- 🤝 Sales & Business Development
 
 ---
 
@@ -77,8 +76,8 @@
 
 ### 📫 Connect With Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahiatiemmanuel-7051572b/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eahiati003@st.ug.edu.gh)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahiati-emmanuel-7051572b2/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahiatiemmanuel537@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/233531154310)
 
 ---
