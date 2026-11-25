@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 340" width="1280" height="340" role="img" aria-labelledby="title desc">
+  <title id="title">Emmanuel Ahiati — Aspiring Data Engineer</title>
+  <desc id="desc">An animated banner showing slow-moving streams of glowing data packets flowing through connected pipelines.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060a1a"/>
+      <stop offset="0.55" stop-color="#0a1330"/>
+      <stop offset="1" stop-color="#04060f"/>
+    </linearGradient>
+
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#12305a" stroke-width="1"/>
+    </pattern>
+
+    <path id="p1" d="M600 150 C740 70 860 230 1000 150 S1150 70 1250 140" fill="none"/>
+    <path id="p2" d="M600 210 C730 290 870 110 1010 200 S1160 280 1250 210" fill="none"/>
+    <path id="p3" d="M600 110 C760 150 820 40 980 110 S1140 190 1250 100" fill="none"/>
+    <path id="p4" d="M600 260 C780 200 900 320 1060 250 S1200 190 1250 255" fill="none"/>
+  </defs>
+
+  <rect width="1280" height="340" fill="url(#bg)"/>
+  <rect width="1280" height="340" fill="url(#grid)" opacity="0.35"/>
+  <ellipse cx="1050" cy="170" rx="330" ry="200" fill="url(#glowBlue)"/>
+  <ellipse cx="700" cy="120" rx="260" ry="170" fill="url(#glowCyan)"/>
+
+  <rect x="-320" y="0" width="320" height="340" fill="url(#sweep)">
+    <animate attributeName="x" values="-320;1280" dur="14s" repeatCount="indefinite"/>
+  </rect>
+
+  <g stroke="#1e3a5f" stroke-width="1.6" fill="none" opacity="0.65">
+    <use xlink:href="#p1"/>
+    <use xlink:href="#p2"/>
+    <use xlink:href="#p3"/>
+    <use xlink:href="#p4"/>
+  </g>
+
+  <g fill="#38bdf8" filter="url(#glow)">
+    <circle r="3.4"><animateMotion dur="20s" repeatCount="indefinite"><mpath xlink:href="#p1"/></animateMotion></circle>
+    <circle r="3.4"><animateMotion dur="20s" begin="-10s" repeatCount="indefinite"><mpath xlink:href="#p1"/></animateMotion></circle>
+
+    <circle r="3.4" fill="#60a5fa"><animateMotion dur="24s" repeatCount="indefinite"><mpath xlink:href="#p2"/></animateMotion></circle>
+    <circle r="3.4" fill="#60a5fa"><animateMotion dur="24s" begin="-12s" repeatCount="indefinite"><mpath xlink:href="#p2"/></animateMotion></circle>
+
+    <circle r="3.4"><animateMotion dur="18s" repeatCount="indefinite"><mpath xlink:href="#p3"/></animateMotion></circle>
+    <circle r="3.4"><animateMotion dur="18s" begin="-9s" repeatCount="indefinite"><mpath xlink:href="#p3"/></animateMotion></circle>
+
+    <circle r="3.4" fill="#818cf8"><animateMotion dur="22s" repeatCount="indefinite"><mpath xlink:href="#p4"/></animateMotion></circle>
+    <circle r="3.4" fill="#818cf8"><animateMotion dur="22s" begin="-11s" repeatCount="indefinite"><mpath xlink:href="#p4"/></animateMotion></circle>
+  </g>
+
+  <g fill="#0ea5e9">
+    <circle cx="600" cy="150" r="4"/>
+    <circle cx="1000" cy="150" r="4"/>
+    <circle cx="600" cy="210" r="4"/>
+    <circle cx="1010" cy="200" r="4"/>
+    <circle cx="980" cy="110" r="4"/>
+    <circle cx="1060" cy="250" r="4"/>
+  </g>
+  <g fill="none" stroke="#38bdf8" stroke-width="1.5">
+    <circle cx="1000" cy="150" r="4"><animate attributeName="r" values="4;13;4" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="1010" cy="200" r="4"><animate attributeName="r" values="4;13;4" dur="6s" begin="-2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="6s" begin="-2s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="110" r="4"><animate attributeName="r" values="4;13;4" dur="5.5s" begin="-3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="5.5s" begin="-3s" repeatCount="indefinite"/></circle>
+    <circle cx="1060" cy="250" r="4"><animate attributeName="r" values="4;13;4" dur="6.5s" begin="-1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="6.5s" begin="-1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g fill="#38bdf8">
+    <circle cx="700" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="18s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.75;0" dur="18s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="22s" begin="-6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="22s" begin="-6s" repeatCount="indefinite"/></circle>
+    <circle cx="940" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="16s" begin="-11s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="16s" begin="-11s" repeatCount="indefinite"/></circle>
+    <circle cx="1120" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="20s" begin="-4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0" dur="20s" begin="-4s" repeatCount="indefinite"/></circle>
+    <circle cx="1210" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="24s" begin="-14s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="24s" begin="-14s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#1d4ed8">
+    <text x="660" y="70" opacity="0">0 1 0 1 1 0
+      <animate attributeName="opacity" values="0;0.5;0" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="1080" y="300" opacity="0">1 0 0 1 0 1
+      <animate attributeName="opacity" values="0;0.5;0" dur="11s" begin="-4s" repeatCount="indefinite"/>
+    </text>
+    <text x="1160" y="70" opacity="0">1 1 0 1 0 0
+      <animate attributeName="opacity" values="0;0.45;0" dur="10s" begin="-7s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <rect x="52" y="112" width="4" height="120" rx="2" fill="#38bdf8"/>
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="78" y="150" fill="#e6edf3" font-size="46" font-weight="700" letter-spacing="1.5">EMMANUEL AHIATI</text>
+    <text x="80" y="192" fill="#38bdf8" font-size="21" font-weight="600" letter-spacing="0.5">Aspiring Data Engineer</text>
+    <text x="80" y="224" fill="#94a3b8" font-size="15" letter-spacing="0.3">Turning raw data into decisions.</text>
+  </g>
+</svg>

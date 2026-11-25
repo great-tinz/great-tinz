@@ -1,8 +1,17 @@
-# Hi, I'm Emmanuel Ahiati! 👋
+<p align="center">
+  <img src="assets/data-flow.svg" alt="Emmanuel Ahiati — Aspiring Data Engineer" width="100%" />
+</p>
 
-### 🎓 IT Student at the University of Ghana | 📊 Aspiring Data Engineer
+<h1 align="center">Hi, I'm Emmanuel Ahiati 👋</h1>
 
-Interested in data analytics, software development, cybersecurity, and building technology that solves real-world problems.
+<p align="center">
+  <b>BSc Information Technology @ University of Ghana · Aspiring Data Engineer</b><br/>
+  <i>I turn raw data into decisions and build tools that automate the boring stuff.</i>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20to-Internships%20%26%20Collaboration-2ea043?style=for-the-badge" alt="Open to internships and collaboration" />
+</p>
 
 ---
 
@@ -46,6 +55,14 @@ Interested in data analytics, software development, cybersecurity, and building 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+
+---
+
+### 🐍 Contribution Graph
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/great-tinz/great-tinz/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake animation" width="100%" />
+</p>
 
 ---
 
