@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 340" width="1280" height="340" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-labelledby="title desc">
   <title id="title">Emmanuel Ahiati — Aspiring Data Engineer</title>
-  <desc id="desc">An animated banner showing slow-moving streams of glowing data packets flowing through connected pipelines.</desc>
+  <desc id="desc">An animated data journey: raw data flowing from a database, through a transform step, into an insights chart.</desc>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -15,13 +15,23 @@
       <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
     </linearGradient>
 
+    <linearGradient id="dbFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123a63"/>
+      <stop offset="1" stop-color="#0a1830"/>
+    </linearGradient>
+
+    <linearGradient id="barFill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+
     <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.32"/>
       <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#6366f1" stop-opacity="0.30"/>
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
     </radialGradient>
 
@@ -37,81 +47,99 @@
       <path d="M40 0H0V40" fill="none" stroke="#12305a" stroke-width="1"/>
     </pattern>
 
-    <path id="p1" d="M600 150 C740 70 860 230 1000 150 S1150 70 1250 140" fill="none"/>
-    <path id="p2" d="M600 210 C730 290 870 110 1010 200 S1160 280 1250 210" fill="none"/>
-    <path id="p3" d="M600 110 C760 150 820 40 980 110 S1140 190 1250 100" fill="none"/>
-    <path id="p4" d="M600 260 C780 200 900 320 1060 250 S1200 190 1250 255" fill="none"/>
+    <path id="pA" d="M664 185 C710 150 762 220 816 185" fill="none"/>
+    <path id="pB" d="M904 185 C958 150 1010 220 1058 185" fill="none"/>
+    <path id="pTrend" d="M1074 212 L1102 196 L1132 204 L1164 176 L1196 184 L1232 150" fill="none"/>
   </defs>
 
-  <rect width="1280" height="340" fill="url(#bg)"/>
-  <rect width="1280" height="340" fill="url(#grid)" opacity="0.35"/>
-  <ellipse cx="1050" cy="170" rx="330" ry="200" fill="url(#glowBlue)"/>
-  <ellipse cx="700" cy="120" rx="260" ry="170" fill="url(#glowCyan)"/>
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#grid)" opacity="0.35"/>
+  <ellipse cx="1150" cy="180" rx="240" ry="190" fill="url(#glowBlue)"/>
+  <ellipse cx="640" cy="180" rx="220" ry="170" fill="url(#glowCyan)"/>
 
-  <rect x="-320" y="0" width="320" height="340" fill="url(#sweep)">
+  <rect x="-320" y="0" width="320" height="360" fill="url(#sweep)">
     <animate attributeName="x" values="-320;1280" dur="14s" repeatCount="indefinite"/>
   </rect>
 
-  <g stroke="#1e3a5f" stroke-width="1.6" fill="none" opacity="0.65">
-    <use xlink:href="#p1"/>
-    <use xlink:href="#p2"/>
-    <use xlink:href="#p3"/>
-    <use xlink:href="#p4"/>
+  <g stroke="#16304f" stroke-width="9" stroke-linecap="round" fill="none" opacity="0.9">
+    <use xlink:href="#pA"/>
+    <use xlink:href="#pB"/>
+  </g>
+  <g stroke="#38bdf8" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.55" stroke-dasharray="5 14">
+    <use xlink:href="#pA">
+      <animate attributeName="stroke-dashoffset" values="0;-38" dur="3.2s" repeatCount="indefinite"/>
+    </use>
+    <use xlink:href="#pB">
+      <animate attributeName="stroke-dashoffset" values="0;-38" dur="3.2s" repeatCount="indefinite"/>
+    </use>
   </g>
 
   <g fill="#38bdf8" filter="url(#glow)">
-    <circle r="3.4"><animateMotion dur="20s" repeatCount="indefinite"><mpath xlink:href="#p1"/></animateMotion></circle>
-    <circle r="3.4"><animateMotion dur="20s" begin="-10s" repeatCount="indefinite"><mpath xlink:href="#p1"/></animateMotion></circle>
-
-    <circle r="3.4" fill="#60a5fa"><animateMotion dur="24s" repeatCount="indefinite"><mpath xlink:href="#p2"/></animateMotion></circle>
-    <circle r="3.4" fill="#60a5fa"><animateMotion dur="24s" begin="-12s" repeatCount="indefinite"><mpath xlink:href="#p2"/></animateMotion></circle>
-
-    <circle r="3.4"><animateMotion dur="18s" repeatCount="indefinite"><mpath xlink:href="#p3"/></animateMotion></circle>
-    <circle r="3.4"><animateMotion dur="18s" begin="-9s" repeatCount="indefinite"><mpath xlink:href="#p3"/></animateMotion></circle>
-
-    <circle r="3.4" fill="#818cf8"><animateMotion dur="22s" repeatCount="indefinite"><mpath xlink:href="#p4"/></animateMotion></circle>
-    <circle r="3.4" fill="#818cf8"><animateMotion dur="22s" begin="-11s" repeatCount="indefinite"><mpath xlink:href="#p4"/></animateMotion></circle>
+    <circle r="3.6"><animateMotion dur="14s" repeatCount="indefinite"><mpath xlink:href="#pA"/></animateMotion></circle>
+    <circle r="3.6"><animateMotion dur="14s" begin="-7s" repeatCount="indefinite"><mpath xlink:href="#pA"/></animateMotion></circle>
+    <circle r="3.6" fill="#60a5fa"><animateMotion dur="14s" begin="-3s" repeatCount="indefinite"><mpath xlink:href="#pB"/></animateMotion></circle>
+    <circle r="3.6" fill="#60a5fa"><animateMotion dur="14s" begin="-10s" repeatCount="indefinite"><mpath xlink:href="#pB"/></animateMotion></circle>
   </g>
 
-  <g fill="#0ea5e9">
-    <circle cx="600" cy="150" r="4"/>
-    <circle cx="1000" cy="150" r="4"/>
-    <circle cx="600" cy="210" r="4"/>
-    <circle cx="1010" cy="200" r="4"/>
-    <circle cx="980" cy="110" r="4"/>
-    <circle cx="1060" cy="250" r="4"/>
+  <g>
+    <ellipse cx="622" cy="145" rx="42" ry="12" fill="#0d2a4a" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M580 145 L580 235 Q622 249 664 235 L664 145" fill="url(#dbFill)" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M580 175 Q622 189 664 175" fill="none" stroke="#38bdf8" stroke-width="1.4" opacity="0.45"/>
+    <path d="M580 205 Q622 219 664 205" fill="none" stroke="#38bdf8" stroke-width="1.4" opacity="0.45"/>
+    <ellipse cx="622" cy="145" rx="30" ry="7" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.5"/>
+    <circle cx="622" cy="185" r="3" fill="#38bdf8" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="622" y="270" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12.5" letter-spacing="1.5" fill="#7c8aa5">RAW DATA</text>
   </g>
+
+  <g>
+    <path d="M904 185 L882 223 L838 223 L816 185 L838 147 L882 147 Z" fill="#0b1a33" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="860" cy="185" r="14" fill="none" stroke="#60a5fa" stroke-width="2"/>
+    <g stroke="#60a5fa" stroke-width="3" stroke-linecap="round">
+      <line x1="874" y1="185" x2="880" y2="185"/>
+      <line x1="874" y1="185" x2="880" y2="185" transform="rotate(45 860 185)"/>
+      <line x1="874" y1="185" x2="880" y2="185" transform="rotate(90 860 185)"/>
+      <line x1="874" y1="185" x2="880" y2="185" transform="rotate(135 860 185)"/>
+      <line x1="874" y1="185" x2="880" y2="185" transform="rotate(180 860 185)"/>
+      <line x1="874" y1="185" x2="880" y2="185" transform="rotate(225 860 185)"/>
+      <line x1="874" y1="185" x2="880" y2="185" transform="rotate(270 860 185)"/>
+      <line x1="874" y1="185" x2="880" y2="185" transform="rotate(315 860 185)"/>
+    </g>
+    <circle cx="860" cy="185" r="4.5" fill="#38bdf8"/>
+    <text x="860" y="270" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12.5" letter-spacing="1.5" fill="#7c8aa5">TRANSFORM</text>
+  </g>
+
+  <g>
+    <rect x="1058" y="116" width="188" height="134" rx="12" fill="#0b1730" stroke="#1e3a5f" stroke-width="1.5"/>
+    <text x="1074" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="9" letter-spacing="2.5" fill="#64748b">ANALYTICS</text>
+    <g fill="url(#barFill)">
+      <rect x="1074" y="198" width="14" height="30" rx="3"><animate attributeName="height" values="30;55;40;72;52;82;30" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/><animate attributeName="y" values="200;175;190;158;178;148;200" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/></rect>
+      <rect x="1098" y="186" width="14" height="42" rx="3"><animate attributeName="height" values="42;34;64;44;78;50;42" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/><animate attributeName="y" values="188;196;166;186;152;180;188" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/></rect>
+      <rect x="1122" y="192" width="14" height="36" rx="3"><animate attributeName="height" values="36;58;42;70;48;66;36" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/><animate attributeName="y" values="194;172;188;160;182;164;194" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/></rect>
+      <rect x="1146" y="180" width="14" height="48" rx="3"><animate attributeName="height" values="48;40;66;52;80;56;48" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/><animate attributeName="y" values="182;190;164;178;150;174;182" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/></rect>
+      <rect x="1170" y="174" width="14" height="54" rx="3"><animate attributeName="height" values="54;70;58;86;62;90;54" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/><animate attributeName="y" values="176;160;172;144;168;140;176" keyTimes="0;0.15;0.3;0.45;0.62;0.82;1" dur="14s" repeatCount="indefinite"/></rect>
+    </g>
+    <use xlink:href="#pTrend" stroke="#38bdf8" stroke-width="2" filter="url(#glow)" opacity="0.9"/>
+    <circle r="3.2" fill="#a5f3fc" filter="url(#glow)"><animateMotion dur="7s" repeatCount="indefinite"><mpath xlink:href="#pTrend"/></animateMotion></circle>
+    <text x="1152" y="270" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12.5" letter-spacing="1.5" fill="#7c8aa5">INSIGHTS</text>
+  </g>
+
   <g fill="none" stroke="#38bdf8" stroke-width="1.5">
-    <circle cx="1000" cy="150" r="4"><animate attributeName="r" values="4;13;4" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="5s" repeatCount="indefinite"/></circle>
-    <circle cx="1010" cy="200" r="4"><animate attributeName="r" values="4;13;4" dur="6s" begin="-2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="6s" begin="-2s" repeatCount="indefinite"/></circle>
-    <circle cx="980" cy="110" r="4"><animate attributeName="r" values="4;13;4" dur="5.5s" begin="-3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="5.5s" begin="-3s" repeatCount="indefinite"/></circle>
-    <circle cx="1060" cy="250" r="4"><animate attributeName="r" values="4;13;4" dur="6.5s" begin="-1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0;0.7" dur="6.5s" begin="-1s" repeatCount="indefinite"/></circle>
+    <circle cx="664" cy="185" r="4"><animate attributeName="r" values="4;15;4" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0;0.6" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="185" r="4"><animate attributeName="r" values="4;18;4" dur="6s" begin="-2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0;0.6" dur="6s" begin="-2s" repeatCount="indefinite"/></circle>
+    <circle cx="1058" cy="185" r="4"><animate attributeName="r" values="4;15;4" dur="5.5s" begin="-3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0;0.6" dur="5.5s" begin="-3s" repeatCount="indefinite"/></circle>
   </g>
 
-  <g fill="#38bdf8">
-    <circle cx="700" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="18s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.75;0" dur="18s" repeatCount="indefinite"/></circle>
-    <circle cx="820" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="22s" begin="-6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="22s" begin="-6s" repeatCount="indefinite"/></circle>
-    <circle cx="940" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="16s" begin="-11s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="16s" begin="-11s" repeatCount="indefinite"/></circle>
-    <circle cx="1120" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="20s" begin="-4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0" dur="20s" begin="-4s" repeatCount="indefinite"/></circle>
-    <circle cx="1210" cy="300" r="2"><animate attributeName="cy" values="320;40" dur="24s" begin="-14s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="24s" begin="-14s" repeatCount="indefinite"/></circle>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#1d4ed8">
+    <text x="690" y="120" opacity="0">0 1 0 1 1 0 <animate attributeName="opacity" values="0;0.45;0" dur="9s" repeatCount="indefinite"/></text>
+    <text x="940" y="250" opacity="0">1 0 0 1 0 1 <animate attributeName="opacity" values="0;0.45;0" dur="11s" begin="-4s" repeatCount="indefinite"/></text>
   </g>
 
-  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#1d4ed8">
-    <text x="660" y="70" opacity="0">0 1 0 1 1 0
-      <animate attributeName="opacity" values="0;0.5;0" dur="9s" repeatCount="indefinite"/>
-    </text>
-    <text x="1080" y="300" opacity="0">1 0 0 1 0 1
-      <animate attributeName="opacity" values="0;0.5;0" dur="11s" begin="-4s" repeatCount="indefinite"/>
-    </text>
-    <text x="1160" y="70" opacity="0">1 1 0 1 0 0
-      <animate attributeName="opacity" values="0;0.45;0" dur="10s" begin="-7s" repeatCount="indefinite"/>
-    </text>
-  </g>
-
-  <rect x="52" y="112" width="4" height="120" rx="2" fill="#38bdf8"/>
+  <rect x="52" y="120" width="4" height="118" rx="2" fill="#38bdf8"/>
   <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
-    <text x="78" y="150" fill="#e6edf3" font-size="46" font-weight="700" letter-spacing="1.5">EMMANUEL AHIATI</text>
-    <text x="80" y="192" fill="#38bdf8" font-size="21" font-weight="600" letter-spacing="0.5">Aspiring Data Engineer</text>
-    <text x="80" y="224" fill="#94a3b8" font-size="15" letter-spacing="0.3">Turning raw data into decisions.</text>
+    <text x="78" y="156" fill="#e6edf3" font-size="42" font-weight="700" letter-spacing="1.5">EMMANUEL AHIATI</text>
+    <text x="80" y="196" fill="#38bdf8" font-size="20" font-weight="600" letter-spacing="0.5">Aspiring Data Engineer</text>
+    <text x="80" y="226" fill="#94a3b8" font-size="14" letter-spacing="0.3">Turning raw data into decisions.</text>
   </g>
 </svg>
