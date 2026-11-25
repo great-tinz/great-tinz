@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-labelledby="title desc">
-  <title id="title">Emmanuel Ahiati — Aspiring Data Engineer</title>
+  <title id="title">Emmanuel Ahiati — Data Engineer</title>
   <desc id="desc">An animated data journey: raw data flowing from a database, through a transform step, into an insights chart.</desc>
 
   <defs>
@@ -139,7 +139,7 @@
   <rect x="52" y="120" width="4" height="118" rx="2" fill="#38bdf8"/>
   <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
     <text x="78" y="156" fill="#e6edf3" font-size="42" font-weight="700" letter-spacing="1.5">EMMANUEL AHIATI</text>
-    <text x="80" y="196" fill="#38bdf8" font-size="20" font-weight="600" letter-spacing="0.5">Aspiring Data Engineer</text>
+    <text x="80" y="196" fill="#38bdf8" font-size="20" font-weight="600" letter-spacing="0.5">Data Engineer</text>
     <text x="80" y="226" fill="#94a3b8" font-size="14" letter-spacing="0.3">Turning raw data into decisions.</text>
   </g>
 </svg>

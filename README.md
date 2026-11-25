@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="assets/data-flow.svg" alt="Emmanuel Ahiati — Aspiring Data Engineer" width="100%" />
+  <img src="assets/data-flow.svg" alt="Emmanuel Ahiati — Data Engineer" width="100%" />
 </p>
 
 <h1 align="center">Hi, I'm Emmanuel Ahiati 👋</h1>
 
 <p align="center">
-  <b>BSc Information Technology @ University of Ghana · Aspiring Data Engineer</b><br/>
+  <b>BSc Information Technology @ University of Ghana · Data Engineer</b><br/>
   <i>I turn raw data into decisions and build tools that automate the boring stuff.</i>
 </p>
 
