@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/data-flow.svg" alt="Emmanuel Ahiati — Aspiring Data Engineer" width="100%" />
+  <img src="assets/data-flow.svg" alt="Emmanuel Ahiati — Data Engineer" width="100%" />
 </p>
 
 <h1 align="center">Hi, I'm Emmanuel Ahiati 👋</h1>
@@ -15,7 +15,22 @@
 
 ---
 
-### 🚀 Currently Exploring
+### 📌 Key Projects
+
+| Project | What it does | Stack |
+| :--- | :--- | :--- |
+| **[Coffee Shop Sales Analysis](https://github.com/great-tinz/Coffee-Shop-Sales-Analysis)** | End-to-end analysis of 149K+ sales rows — star schema, dashboard & staffing insights. | `Excel` `MySQL` |
+| **[Grand Hotel Management System](https://github.com/great-tinz/grand-hotel-db-project)** | Normalized hotel database with ER modeling, integrity constraints & analytical SQL. | `MySQL` `DB Design` |
+| **[Music Store SQL Analytics](https://github.com/great-tinz/music-store-sql-analytics)** | Business-question SQL on an 11-table database — joins, CTEs & recursive queries. | `SQL` `MySQL` |
+| **[Oasis Infobyte Analytics Tasks](https://github.com/great-tinz/OIBSIP)** | Retail EDA, messy HR data cleaning & Google Play Store sentiment analysis. | `Python` `Pandas` |
+| **[Online Course Platform DB](https://github.com/great-tinz/online-course-platform-db)** | E-learning database with 6 entities, ERD & 20+ analytical queries. | `MySQL` `ERD` |
+| **[University Exam Records System](https://github.com/great-tinz/university-exam-db-project)** | Exam-records DB with many-to-many enrollment & strict data-integrity rules. | `MySQL` `SQL` |
+
+<p align="center"><a href="https://github.com/great-tinz?tab=repositories">View all repositories →</a></p>
+
+---
+
+### 🔭 Currently Exploring
 
 - 📊 Data Analytics & Data Engineering
 - 💻 Software Development & Database Management
